@@ -1,0 +1,7 @@
+{
+  "name": "swapiService",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,15 @@
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let item of currentItems">
+      <h2 class="title">{{item.title}}</h2>
+      <ion-list>
+        <ion-card *ngFor="let character of item.characters">
+          <button ion-item (click)="openPeople(item)">
+            <h2>{{character}}</h2>
+          </button>
+        </ion-card>
+      </ion-list>
+    </ion-card>
+  </ion-list>
+</ion-content>

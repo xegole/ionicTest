@@ -1,27 +1,89 @@
 {
   "project_info": {
-    "project_number": "123",
-    "firebase_url": "https://cordova-plugin-firebase.firebaseio.com",
-    "project_id": "cordova-plugin-firebase",
-    "storage_bucket": "cordova-plugin-firebase.appspot.com"
+    "project_number": "997630960709",
+    "firebase_url": "https://chat-demo-9dccf.firebaseio.com",
+    "project_id": "chat-demo-9dccf",
+    "storage_bucket": "chat-demo-9dccf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123:android:123",
+        "mobilesdk_app_id": "1:997630960709:android:dc25037c650381a6",
         "android_client_info": {
-          "package_name": "com.github.cordova_plugin_firebase"
+          "package_name": "com.twilio.chat.demo.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "123.apps.googleusercontent.com",
+          "client_id": "997630960709-5909m86lsjsbuci1bke87anqb2p2hjik.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "123"
+          "current_key": "AIzaSyDuDAt6f3paQlhitc4tpr4j8gqCqaNHMpg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997630960709:android:d630844b07bff4bb",
+        "android_client_info": {
+          "package_name": "com.twilio.twiliochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997630960709-5909m86lsjsbuci1bke87anqb2p2hjik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuDAt6f3paQlhitc4tpr4j8gqCqaNHMpg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997630960709:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997630960709-5909m86lsjsbuci1bke87anqb2p2hjik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuDAt6f3paQlhitc4tpr4j8gqCqaNHMpg"
         }
       ],
       "services": {

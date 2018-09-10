@@ -66,7 +66,7 @@ var ItemDetailPage = /** @class */ (function () {
     }
     ItemDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-item-detail',template:/*ion-inline-start:"/home/xegole/swapiService/src/pages/item-detail/item-detail.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ item.title }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <div class="item-detail" padding>\n    <h2>{{item.director}}</h2>\n    <p>{{item.opening_crawl}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/xegole/swapiService/src/pages/item-detail/item-detail.html"*/
+            selector: 'page-item-detail',template:/*ion-inline-start:"/home/xegole/ionicTest/src/pages/item-detail/item-detail.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ item.title }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <div class="item-detail" padding>\n    <h2>{{item.director}}</h2>\n    <p>{{item.opening_crawl}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/xegole/ionicTest/src/pages/item-detail/item-detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], ItemDetailPage);

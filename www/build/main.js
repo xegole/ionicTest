@@ -51,7 +51,7 @@ var FilmsPage = /** @class */ (function () {
     };
     FilmsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-films',template:/*ion-inline-start:"/home/xegole/swapiService/src/pages/films/films.html"*/'\n<ion-content>\n  <ion-list>\n    <ion-card *ngFor="let item of currentItems">\n      <h2 class="title">{{item.title}}</h2>\n      <ion-list>\n        <ion-card *ngFor="let character of item.characters">\n          <button ion-item (click)="openPeople(item)">\n            <h2>{{character}}</h2>\n          </button>\n        </ion-card>\n      </ion-list>\n    </ion-card>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/xegole/swapiService/src/pages/films/films.html"*/,
+            selector: 'page-films',template:/*ion-inline-start:"/home/xegole/ionicTest/src/pages/films/films.html"*/'\n<ion-content>\n  <ion-list>\n    <ion-card *ngFor="let item of currentItems">\n      <h2 class="title">{{item.title}}</h2>\n      <ion-list>\n        <ion-card *ngFor="let character of item.characters">\n          <button ion-item (click)="openPeople(item)">\n            <h2>{{character}}</h2>\n          </button>\n        </ion-card>\n      </ion-list>\n    </ion-card>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/xegole/ionicTest/src/pages/films/films.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* SwapiProvider */]])
     ], FilmsPage);
@@ -107,7 +107,7 @@ var StarshipsPage = /** @class */ (function () {
     };
     StarshipsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-starships',template:/*ion-inline-start:"/home/xegole/swapiService/src/pages/starships/starships.html"*/'<ion-content>\n  <ion-list>\n    <ion-card *ngFor="let item of currentItems">\n      <h2 class="title">{{item.name}}</h2>\n      <h2 class="subTitle">{{item.model}}</h2>\n    </ion-card>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/xegole/swapiService/src/pages/starships/starships.html"*/,
+            selector: 'page-starships',template:/*ion-inline-start:"/home/xegole/ionicTest/src/pages/starships/starships.html"*/'<ion-content>\n  <ion-list>\n    <ion-card *ngFor="let item of currentItems">\n      <h2 class="title">{{item.name}}</h2>\n      <h2 class="subTitle">{{item.model}}</h2>\n    </ion-card>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/xegole/ionicTest/src/pages/starships/starships.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* SwapiProvider */]])
     ], StarshipsPage);
@@ -119,6 +119,50 @@ var StarshipsPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 156:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsHomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__films_films__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__starships_starships__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__vehicles_vehicles__ = __webpack_require__(157);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var TabsHomePage = /** @class */ (function () {
+    function TabsHomePage(nav) {
+        this.nav = nav;
+        this.tabFilmsRoot = __WEBPACK_IMPORTED_MODULE_2__films_films__["a" /* FilmsPage */];
+        this.tabStarShipsRoot = __WEBPACK_IMPORTED_MODULE_3__starships_starships__["a" /* StarshipsPage */];
+        this.tabVehiclesRoot = __WEBPACK_IMPORTED_MODULE_4__vehicles_vehicles__["a" /* VehiclesPage */];
+    }
+    TabsHomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tabs-home',template:/*ion-inline-start:"/home/xegole/ionicTest/src/pages/tabs-home/tabs-home.html"*/'<ion-tabs>\n  <ion-tab [root]="tabFilmsRoot" tabTitle="Films"></ion-tab>\n  <ion-tab [root]="tabStarShipsRoot" tabTitle="StarShips"></ion-tab>\n  <ion-tab [root]="tabVehiclesRoot" tabTitle="Vehicles"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/xegole/ionicTest/src/pages/tabs-home/tabs-home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+    ], TabsHomePage);
+    return TabsHomePage;
+}());
+
+//# sourceMappingURL=tabs-home.js.map
+
+/***/ }),
+
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -163,7 +207,7 @@ var VehiclesPage = /** @class */ (function () {
     };
     VehiclesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-vehicles',template:/*ion-inline-start:"/home/xegole/swapiService/src/pages/vehicles/vehicles.html"*/'<ion-content>\n    <ion-list>\n      <ion-card *ngFor="let item of currentItems">\n        <h2 class="title">{{item.name}}</h2>\n        <h2 class="subTitle">{{item.model}}</h2>\n      </ion-card>\n    </ion-list>\n  </ion-content>'/*ion-inline-end:"/home/xegole/swapiService/src/pages/vehicles/vehicles.html"*/,
+            selector: 'page-vehicles',template:/*ion-inline-start:"/home/xegole/ionicTest/src/pages/vehicles/vehicles.html"*/'<ion-content>\n    <ion-list>\n      <ion-card *ngFor="let item of currentItems">\n        <h2 class="title">{{item.name}}</h2>\n        <h2 class="subTitle">{{item.model}}</h2>\n      </ion-card>\n    </ion-list>\n  </ion-content>'/*ion-inline-end:"/home/xegole/ionicTest/src/pages/vehicles/vehicles.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* SwapiProvider */]])
     ], VehiclesPage);
@@ -171,50 +215,6 @@ var VehiclesPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=vehicles.js.map
-
-/***/ }),
-
-/***/ 157:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsHomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__films_films__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__starships_starships__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__vehicles_vehicles__ = __webpack_require__(156);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var TabsHomePage = /** @class */ (function () {
-    function TabsHomePage(nav) {
-        this.nav = nav;
-        this.tabFilmsRoot = __WEBPACK_IMPORTED_MODULE_2__films_films__["a" /* FilmsPage */];
-        this.tabStarShipsRoot = __WEBPACK_IMPORTED_MODULE_3__starships_starships__["a" /* StarshipsPage */];
-        this.tabVehiclesRoot = __WEBPACK_IMPORTED_MODULE_4__vehicles_vehicles__["a" /* VehiclesPage */];
-    }
-    TabsHomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs-home',template:/*ion-inline-start:"/home/xegole/swapiService/src/pages/tabs-home/tabs-home.html"*/'<ion-tabs>\n  <ion-tab [root]="tabFilmsRoot" tabTitle="Films"></ion-tab>\n  <ion-tab [root]="tabStarShipsRoot" tabTitle="StarShips"></ion-tab>\n  <ion-tab [root]="tabVehiclesRoot" tabTitle="Vehicles"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/xegole/swapiService/src/pages/tabs-home/tabs-home.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
-    ], TabsHomePage);
-    return TabsHomePage;
-}());
-
-//# sourceMappingURL=tabs-home.js.map
 
 /***/ }),
 
@@ -252,11 +252,11 @@ var map = {
 		3
 	],
 	"../pages/tabs-home/tabs-home.module": [
-		500,
+		499,
 		2
 	],
 	"../pages/vehicles/vehicles.module": [
-		499,
+		500,
 		1
 	]
 };
@@ -469,10 +469,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_home_tabs_home__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_home_tabs_home__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_films_films__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_starships_starships__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_vehicles_vehicles__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_vehicles_vehicles__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_firebase__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angularfire2__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angularfire2_firestore__ = __webpack_require__(284);
@@ -527,8 +527,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/films/films.module#FilmsPageModule', name: 'FilmsPage', segment: 'films', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/starships/starships.module#StarshipsPageModule', name: 'StarshipsPage', segment: 'starships', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/item-detail/item-detail.module#ItemDetailPageModule', name: 'ItemDetailPage', segment: 'item-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/vehicles/vehicles.module#VehiclesPageModule', name: 'VehiclesPage', segment: 'vehicles', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs-home/tabs-home.module#TabsHomePageModule', name: 'TabsHomePage', segment: 'tabs-home', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/tabs-home/tabs-home.module#TabsHomePageModule', name: 'TabsHomePage', segment: 'tabs-home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/vehicles/vehicles.module#VehiclesPageModule', name: 'VehiclesPage', segment: 'vehicles', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_13_angularfire2__["a" /* AngularFireModule */].initializeApp(config),
@@ -617,7 +617,7 @@ var SwapiProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_home_tabs_home__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_home_tabs_home__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_fcm_fcm__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -654,7 +654,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/xegole/swapiService/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/xegole/swapiService/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/xegole/ionicTest/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/xegole/ionicTest/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__providers_fcm_fcm__["a" /* FcmProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
